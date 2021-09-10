@@ -1,2 +1,1 @@
-# rsschool-cv
-CV markdown for rsschool
+https://github.com/irnq/rsschool-cv/cv
