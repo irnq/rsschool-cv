@@ -1,1 +1,0 @@
-https://github.com/irnq/rsschool-cv/cv
