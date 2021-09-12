@@ -1,0 +1,39 @@
+.content {
+  display: flex;
+  font-weight: 600;
+}
+
+.sidebar {
+  max-width: 30%;
+  & ul {
+    list-style: none;
+  }
+  &__item {
+    margin-top: 2.5rem;
+  }
+  .contact {
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    &__icons {
+      height: 3.2rem;
+      width: 3.2rem;
+      margin-right: 1rem;
+      fill: $color-dark;
+    }
+  }
+
+  .education {
+    .courses {
+      &__item {
+        margin-left: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.main {
+}

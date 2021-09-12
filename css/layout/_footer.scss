@@ -1,0 +1,20 @@
+.footer {
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__link-logo {
+    height: 50px;
+  }
+  svg {
+    max-width: 50px;
+  }
+}

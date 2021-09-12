@@ -1,0 +1,51 @@
+body {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 2rem;
+  a {
+    text-decoration: none;
+    color: $color-dark;
+    transition: all 0.2s;
+    font-weight: 600;
+
+    use {
+      fill: $color-dark;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      color: $color-dark-secondary;
+
+      use {
+        fill: $color-dark-secondary;
+      }
+    }
+  }
+}
+
+.heading-primary {
+  color: $color-dark;
+  margin-bottom: 6rem;
+  font-family: 'Expletus Sans', cursive;
+  font-weight: 700;
+  font-size: 4.5rem;
+}
+.heading-secondary {
+  color: $color-dark;
+  margin-bottom: 3rem;
+  font-family: 'Expletus Sans', cursive;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.u-borderbottom {
+  border-bottom: solid 2px $color-dark;
+}
+.u-marginbottom-small {
+  margin-bottom: 1rem;
+}
+.u-marginbottom-medium {
+  margin-bottom: 4rem;
+}
+.u-marginbottom-big {
+  margin-bottom: 6rem;
+}
