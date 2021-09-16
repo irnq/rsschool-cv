@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500;700&family=Space+Mono&family=Urbanist:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles/monokai.min.css">
   </head>
   <body>
     <div class="wrap">
@@ -58,9 +59,10 @@
             <li class="sidebar__item">
               <h2 class="heading-secondary u-borderbottom">Education</h2>
               <ul class="education">
-                <li class="education__item u-marginbottom-small">Izhevsk State<br>Technical University</li>
+                <li class="education__item u-marginbottom-small">Izhevsk State<br />Technical University</li>
                 <li class="education__item u-marginbottom-small">
-                  <ul class="courses"> Courses:
+                  Courses:
+                  <ul class="courses">
                     <li class="courses__item">Udemy</li>
                     <li class="courses__item">javascript.info</li>
                     <li class="courses__item">Codecademy</li>
@@ -80,14 +82,64 @@
           </ul>
         </aside>
         <main class="main">
-          <section></section>
+          <section class="summary u-marginbottom-medium">
+            <h2 class="heading-secondary u-textalign-center">Summary</h2>
+            <p>
+              &nbsp &nbsp I work as a design engineer for a laser cutting manufacturing company. I write programs for CNC
+              machines and wrote several scripts for autocad on autolisp. But I want to become a real
+              programmer and so I decided to move on and my choice fell on Web development and Front-end in
+              particular. I came to “The Rolling Scopes School” to improve my skills and do interesting
+              projects.
+            </p>
+          </section>
+          <section class="skills u-marginbottom-medium">
+            <h2 class="heading-secondary u-textalign-center">Skills</h2>
+            <ul class="skills__list">
+              <li class="skills__type">
+                <h3 class="heading-tertiary">Hard</h3>
+                <ul class="skills__list-inner">
+                  <li class="skills__item">HTML</li>
+                  <li class="skills__item">CSS/SCSS</li>
+                  <li class="skills__item">JS</li>
+                  <li class="skills__item">Git</li>
+                </ul>
+              </li>
+              <li class="skills__type">
+                <h3 class="heading-tertiary">Soft</h3>
+                <ul class="skills__list-inner">
+                  <li class="skills__item">Willingness to learn</li>
+                  <li class="skills__item">Responsible</li>
+                  <li class="skills__item">Communicative</li>
+                  <li class="skills__item">Open-mindedness</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section class="code u-marginbottom-medium">
+            <h2 class="heading-secondary u-textalign-center">Code example</h2>
+            <p>
+              My favorite method is <code>reduce()</code> , so I gave an example from CodeWars’s kata
+              <b>Array Deep Count</b>
+
+              <q
+                >Array.prototype.length will give you the number of top-level elements in an array. Your task
+                is to create a function deepCount that returns the number of ALL elements within an array,
+                including any within inner-level arrays. The input will always be an array.</q
+              >
+              My code:
+                <pre><code class="code-container language-js">function deepCount(a) {
+                  return a.reduce((lenght, el) => {
+                    return lenght+= Array.isArray(el) ? deepCount(el) + 1 : 1, 0)
+                  }</code></pre>
+            </p>
+          </section>
         </main>
       </div>
       <footer class="footer">
         <ul class="footer__list">
           <li class="footer__item">
             <a href="https://github.com/irnq" class="footer__link">
-              <svg class="footer__link-logo"">
+              <svg class="footer__link-logo">
                 <use xlink:href="icons/icons.svg#github"></use>
               </svg>
               Me on GitHub
@@ -102,5 +154,7 @@
         </ul>
       </footer>
     </div>
+    <script src="./highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
   </body>
 </html>

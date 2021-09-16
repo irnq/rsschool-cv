@@ -1,6 +1,7 @@
 .content {
   display: flex;
   font-weight: 600;
+  margin-top: 2.5rem;
 }
 
 .sidebar {
@@ -10,6 +11,9 @@
   }
   &__item {
     margin-top: 2.5rem;
+    &:first-child {
+      margin-top: 0rem;
+    }
   }
   .contact {
     a {
@@ -36,4 +40,54 @@
 }
 
 .main {
+  width: 100%;
+  padding: 0 4rem;
+  p {
+    font-weight: 300;
+  }
+
+  .code-container {
+    padding: 1rem;
+    margin: 2rem 0rem;
+    box-shadow: rgb(170, 170, 170) 7px -7px 10px 0px;
+    border-radius: 4px;
+  }
+
+  .skills {
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      text-align: center;
+
+      &-inner {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        list-style: none;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+      }
+    }
+
+    &__type {
+      box-shadow: rgb(170, 170, 170) 0px 0px 15px 5px;
+      min-height: 35vh;
+      min-width: 33%;
+      border-radius: 5px;
+      padding: 3rem 2rem;
+      transition: all 0.6s;
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: rgb(170, 170, 170) 0px 0px 15px 7px;
+      }
+    }
+
+    &__item {
+      padding: 1rem;
+    }
+  }
 }

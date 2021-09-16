@@ -1,6 +1,8 @@
 body {
   font-family: 'Urbanist', sans-serif;
   font-size: 2rem;
+  color: $color-dark;
+  line-height: 3rem;
   a {
     text-decoration: none;
     color: $color-dark;
@@ -21,19 +23,26 @@ body {
     }
   }
 }
-
+code {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.5rem;
+}
 .heading-primary {
-  color: $color-dark;
   margin-bottom: 6rem;
   font-family: 'Expletus Sans', cursive;
   font-weight: 700;
   font-size: 4.5rem;
 }
 .heading-secondary {
-  color: $color-dark;
   margin-bottom: 3rem;
   font-family: 'Expletus Sans', cursive;
   font-weight: 500;
+  font-size: 3rem;
+}
+.heading-tertiary {
+  margin-bottom: 1.5rem;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
   font-size: 3rem;
 }
 
@@ -48,4 +57,7 @@ body {
 }
 .u-marginbottom-big {
   margin-bottom: 6rem;
+}
+.u-textalign-center {
+  text-align: center;
 }
