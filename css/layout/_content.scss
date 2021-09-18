@@ -1,20 +1,61 @@
 .content {
   display: flex;
   font-weight: 600;
-  margin-top: 2.5rem;
+
+  @media only screen and (max-width: ($bp-mid)) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .sidebar {
   max-width: 30%;
+  @media only screen and (max-width: ($bp-mid)) {
+    min-width: 100%;
+    margin-bottom: 3rem;
+    padding-right: 2rem;
+  }
+
   & ul {
     list-style: none;
+  }
+  &__content {
+    @media only screen and (max-width: ($bp-mid)) {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    @media only screen and (max-width: ($bp-mid)) {
+      flex-direction: column-reverse;
+      width: 100%;
+      justify-content: space-between;
+    }
   }
   &__item {
     margin-top: 2.5rem;
     &:first-child {
       margin-top: 0rem;
     }
+
+    @media only screen and (max-width: ($bp-mid)) {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0;
+      &-contact {
+        order: 2;
+      }
+      &-education {
+        order: 0;
+      }
+      &-language {
+        order: 1;
+      }
+    }
+    @media only screen and (max-width: ($bp-small)) {
+      margin-bottom: 2rem;
+    }
   }
+
   .contact {
     a {
       display: flex;
@@ -27,6 +68,11 @@
       margin-right: 1rem;
       fill: $color-dark;
     }
+
+    @media only screen and (max-width: ($bp-mid)) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .education {
@@ -35,6 +81,21 @@
         margin-left: 2rem;
         font-weight: 300;
       }
+      @media only screen and (max-width: ($bp-mid)) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    @media only screen and (max-width: ($bp-mid)) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .languages {
+    @media only screen and (max-width: ($bp-mid)) {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -49,7 +110,7 @@
   .code-container {
     padding: 1rem;
     margin: 2rem 0rem;
-    box-shadow: rgb(170, 170, 170) 7px -7px 10px 0px;
+    box-shadow: $color-shadow-grey 7px -7px 10px 0px;
     border-radius: 4px;
   }
 
@@ -59,6 +120,16 @@
       justify-content: space-around;
       list-style: none;
       text-align: center;
+      width: 100%;
+
+      @media only screen and (max-width: ($bp-small)) {
+        flex-direction: column;
+        width: 60%;
+        align-content: center;
+        height: 90rem;
+        margin: 0 auto;
+        min-width: 22rem;
+      }
 
       &-inner {
         margin-top: 3rem;
@@ -73,16 +144,17 @@
     }
 
     &__type {
-      box-shadow: rgb(170, 170, 170) 0px 0px 15px 5px;
+      box-shadow: $color-shadow-grey 0px 0px 15px 5px;
       min-height: 35vh;
       min-width: 33%;
       border-radius: 5px;
       padding: 3rem 2rem;
       transition: all 0.6s;
+      background: linear-gradient(45deg, #eecb9d 9%, #d69440 9%, #d69440 91%, #eecb9d 91%);
 
       &:hover {
         transform: scale(1.03);
-        box-shadow: rgb(170, 170, 170) 0px 0px 15px 7px;
+        box-shadow: $color-shadow-grey 0px 0px 15px 7px;
       }
     }
 
@@ -102,7 +174,18 @@
       width: 35rem;
       overflow: hidden;
       border-radius: 3px;
-      box-shadow: rgb(170, 170, 170) 0px 0px 15px 5px;
+      box-shadow: $color-shadow-grey 0px 0px 15px 5px;
+
+      @media only screen and (max-width: ($bp-mid)) {
+        transform: translateX(-10rem);
+      }
+
+      @media (hover: none) and (pointer: coarse) {
+      }
+      @media only screen and (max-width: ($bp-small)) {
+        transform: translateX(0rem);
+        margin-bottom: 20rem;
+      }
     }
 
     &__block {
@@ -110,6 +193,15 @@
 
       &:hover .projects__block-description {
         transform: translateX(33rem);
+        @media (hover: none) and (pointer: coarse) {
+          transform: translateX(23rem);
+        }
+        @media only screen and (max-width: ($bp-mid)) {
+          transform: translateX(23rem);
+        }
+        @media only screen and (max-width: ($bp-small)) {
+          transform: translate(0, 22rem);
+        }
       }
 
       &-description {
@@ -128,6 +220,21 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
+        @media (hover: none) and (pointer: coarse) {
+          transform: translateX(23rem);
+        }
+        @media only screen and (max-width: ($bp-mid)) {
+          transform: translateX(23rem);
+        }
+
+        @media only screen and (max-width: ($bp-small)) {
+          transform: translate(0rem, 22rem);
+
+          width: 100%;
+          text-align: center;
+          height: 40%;
+        }
       }
     }
     &__img {

@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    padding-bottom: 2rem;
   }
 
   &__item {
@@ -12,9 +13,17 @@
   }
 
   &__link-logo {
-    height: 50px;
+    height: 5rem;
+
+    @media only screen and (max-width: ($bp-small)) {
+      height: 3rem;
+    }
   }
+
   svg {
-    max-width: 50px;
+    max-width: 5rem;
+    @media only screen and (max-width: ($bp-small)) {
+      max-width: 3rem;
+    }
   }
 }

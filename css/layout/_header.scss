@@ -2,10 +2,34 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding-top: 2rem;
+
+  @media only screen and (max-width: ($bp-mid)) {
+    padding-top: 10rem;
+    margin: 0 auto;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: ($bp-small)) {
+    padding-top: 4rem;
+  }
 
   &--portrait {
     border-radius: 50%;
     padding: 1rem;
     border: solid 3px $color-dark;
+    @media only screen and (max-width: ($bp-small)) {
+      width: 18rem;
+    }
+  }
+
+  &--title {
+    @media only screen and (max-width: ($bp-big)) {
+      font-size: 4rem;
+      line-height: 4.6rem;
+      text-align: center;
+    }
   }
 }

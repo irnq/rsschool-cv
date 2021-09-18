@@ -1,13 +1,13 @@
 *,
 *::before,
-*::after{
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  
 }
 
-html{
+html {
   box-sizing: border-box;
-  font-size: 62.5%;  //1rem=10px;
+  font-size: 62.5%; //1rem=10px;
+  scroll-behavior: smooth;
 }

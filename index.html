@@ -21,7 +21,7 @@
       <div class="content u-marginbottom-big">
         <aside class="sidebar">
           <ul class="sidebar__content">
-            <li class="sidebar__item">
+            <li class="sidebar__item sidebar__item-contact">
               <h2 class="heading-secondary u-borderbottom">Contact</h2>
               <ul class="contact">
                 <li class="contact__item u-marginbottom-small">
@@ -56,7 +56,7 @@
                 </li>
               </ul>
             </li>
-            <li class="sidebar__item">
+            <li class="sidebar__item sidebar__item-education">
               <h2 class="heading-secondary u-borderbottom">Education</h2>
               <ul class="education">
                 <li class="education__item u-marginbottom-small">Izhevsk State<br />Technical University</li>
@@ -72,7 +72,7 @@
                 </li>
               </ul>
             </li>
-            <li class="sidebar__item">
+            <li class="sidebar__item sidebar__item-language">
               <h2 class="heading-secondary u-borderbottom">Language</h2>
               <ul class="languages">
                 <li class="languages__item u-marginbottom-small">Russian</li>
@@ -83,7 +83,7 @@
         </aside>
         <main class="main">
           <section class="summary u-marginbottom-big">
-            <h2 class="heading-secondary u-textalign-center">Summary</h2>
+            <h2 class="heading-secondary u-textalign-center" id="summary">Summary</h2>
             <p>
               &nbsp &nbsp I work as a design engineer for a laser cutting manufacturing company. I write programs for CNC
               machines and wrote several scripts for autocad on autolisp. But I want to become a real
@@ -93,7 +93,7 @@
             </p>
           </section>
           <section class="skills u-marginbottom-big">
-            <h2 class="heading-secondary u-textalign-center">Skills</h2>
+            <h2 class="heading-secondary u-textalign-center" id="skills">Skills</h2>
             <ul class="skills__list">
               <li class="skills__type">
                 <h3 class="heading-tertiary">Hard</h3>
@@ -115,8 +115,8 @@
               </li>
             </ul>
           </section>
-          <section class="projects u-marginbottom-medium">
-            <h2 class="heading-secondary u-textalign-center">My training projects</h2>
+          <section class="projects u-marginbottom-medium" > 
+            <h2 class="heading-secondary u-textalign-center projects__header" id="projects">My training projects</h2>
             <div class="projects__block u-marginbottom-medium">
               <a class="projects__link" href="https://irnq.github.io/Natours2/"><img class ="projects__img"src="./img/natours2-308x220.jpg" alt="natours picture"></a>
               <div class="projects__block-description">
@@ -134,13 +134,13 @@
             <div class="projects__block u-marginbottom-medium">
               <a class="projects__link" href="https://irnq.github.io/trillo/"><img class ="projects__img"src="./img/trillo2-308x220.jpg" alt="natours picture"></a>
               <div class="projects__block-description">
-                <h3 class="heading-tertiary">Trillo<br>project</h3>
+                <h3 class="heading-tertiary">Trillo project</h3>
                 <p>Adaptive design with FLEX technology</p>
               </div>
             </div>
           </section>
-          <section class="code u-marginbottom-medium">
-            <h2 class="heading-secondary u-textalign-center">Code example</h2>
+          <section class="code u-marginbottom-medium" >
+            <h2 class="heading-secondary u-textalign-center" id="code">Code example</h2>
             <p>
               My favorite method is <code>reduce()</code> , so I gave an example from CodeWars’s kata
               <b>Array Deep Count</b>
@@ -164,7 +164,7 @@
           <li class="footer__item">
             <a href="https://github.com/irnq" class="footer__link">
               <svg class="footer__link-logo">
-                <use xlink:href="icons/icons.svg#github"></use>
+                <use class="footer__link-svg" xlink:href="icons/icons.svg#github"></use>
               </svg>
               Me on GitHub
             </a>
@@ -177,6 +177,18 @@
           </li>
         </ul>
       </footer>
+      <div class="nav__wrap">
+        <input type="checkbox" class="nav__check-box" id="navi-toggle">
+        <label class="burger-btn" for="navi-toggle"><span class="burger-icon">&nbsp;</span></label>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__button"><a class="nav__link" href="#summary">Summary</a></li>
+            <li class="nav__button"><a class="nav__link" href="#skills">Skills</a></li>
+            <li class="nav__button"><a class="nav__link" href="#projects">Projects</a></li>
+            <li class="nav__button"><a class="nav__link" href="#code">Code</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
     <script src="./highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
