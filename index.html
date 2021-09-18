@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500;700&family=Space+Mono&family=Urbanist:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/monokai.min.css">
+    <link rel="stylesheet" href="styles/monokai.min.css" />
   </head>
   <body>
     <div class="wrap">
@@ -85,11 +85,11 @@
           <section class="summary u-marginbottom-big">
             <h2 class="heading-secondary u-textalign-center" id="summary">Summary</h2>
             <p>
-              &nbsp &nbsp I work as a design engineer for a laser cutting manufacturing company. I write programs for CNC
-              machines and wrote several scripts for autocad on autolisp. But I want to become a real
-              programmer and so I decided to move on and my choice fell on Web development and Front-end in
-              particular. I came to “The Rolling Scopes School” to improve my skills and do interesting
-              projects.
+              &nbsp;&nbsp;I work as a design engineer for a laser cutting manufacturing company. I write
+              programs for CNC machines and wrote several scripts for autocad on autolisp. But I want to
+              become a real programmer and so I decided to move on and my choice fell on Web development and
+              Front-end in particular. I came to “The Rolling Scopes School” to improve my skills and do
+              interesting projects.
             </p>
           </section>
           <section class="skills u-marginbottom-big">
@@ -115,31 +115,39 @@
               </li>
             </ul>
           </section>
-          <section class="projects u-marginbottom-medium" > 
-            <h2 class="heading-secondary u-textalign-center projects__header" id="projects">My training projects</h2>
+          <section class="projects u-marginbottom-medium">
+            <h2 class="heading-secondary u-textalign-center projects__header" id="projects">
+              My training projects
+            </h2>
             <div class="projects__block u-marginbottom-medium">
-              <a class="projects__link" href="https://irnq.github.io/Natours2/"><img class ="projects__img"src="./img/natours2-308x220.jpg" alt="natours picture"></a>
+              <a class="projects__link" href="https://irnq.github.io/Natours2/"
+                ><img class="projects__img" src="./img/natours2-308x220.jpg" alt="natours picture"
+              /></a>
               <div class="projects__block-description">
                 <h3 class="heading-tertiary">Natours project</h3>
                 <p>Adaptive design with power of HTML5 and CSS3</p>
               </div>
             </div>
             <div class="projects__block u-marginbottom-medium">
-              <a class="projects__link" href="https://irnq.github.io/nexter/"><img class ="projects__img"src="./img/nexter2-308x220.jpg" alt="natours picture"></a>
+              <a class="projects__link" href="https://irnq.github.io/nexter/"
+                ><img class="projects__img" src="./img/nexter2-308x220.jpg" alt="natours picture"
+              /></a>
               <div class="projects__block-description">
                 <h3 class="heading-tertiary">Nexter project</h3>
                 <p>Adaptive design with GRID technology</p>
               </div>
             </div>
             <div class="projects__block u-marginbottom-medium">
-              <a class="projects__link" href="https://irnq.github.io/trillo/"><img class ="projects__img"src="./img/trillo2-308x220.jpg" alt="natours picture"></a>
+              <a class="projects__link" href="https://irnq.github.io/trillo/"
+                ><img class="projects__img" src="./img/trillo2-308x220.jpg" alt="natours picture"
+              /></a>
               <div class="projects__block-description">
                 <h3 class="heading-tertiary">Trillo project</h3>
                 <p>Adaptive design with FLEX technology</p>
               </div>
             </div>
           </section>
-          <section class="code u-marginbottom-medium" >
+          <section class="code u-marginbottom-medium">
             <h2 class="heading-secondary u-textalign-center" id="code">Code example</h2>
             <p>
               My favorite method is <code>reduce()</code> , so I gave an example from CodeWars’s kata
@@ -151,11 +159,11 @@
                 including any within inner-level arrays. The input will always be an array.</q
               >
               My code:
-                <pre><code class="code-container language-js">function deepCount(a) {
+            </p>
+            <pre><code class="code-container language-js">function deepCount(a) {
                   return a.reduce((lenght, el) => {
                     return lenght+= Array.isArray(el) ? deepCount(el) + 1 : 1, 0)
                   }</code></pre>
-            </p>
           </section>
         </main>
       </div>
@@ -178,7 +186,7 @@
         </ul>
       </footer>
       <div class="nav__wrap">
-        <input type="checkbox" class="nav__check-box" id="navi-toggle">
+        <input type="checkbox" class="nav__check-box" id="navi-toggle" />
         <label class="burger-btn" for="navi-toggle"><span class="burger-icon">&nbsp;</span></label>
         <nav class="nav">
           <ul class="nav__list">
@@ -191,6 +199,8 @@
       </div>
     </div>
     <script src="./highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
