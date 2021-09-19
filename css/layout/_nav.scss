@@ -60,6 +60,10 @@
   overflow: hidden;
   transition: left 0.5s, background-color 0.7s, width 0.5s;
 
+  @media only screen and (max-width: ($bp-big)) {
+    width: 45rem;
+  }
+
   @media only screen and (max-width: ($bp-mid)) {
     transform: translateX(-50%);
   }
