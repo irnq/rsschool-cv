@@ -1,4 +1,3 @@
-@import url(d:\GoogleDrive\projects\rsschool\rsschool-cv\css\normalize\normalize.css);
 *,
 *::before,
 *::after {
@@ -228,6 +227,10 @@ code {
   display: -ms-flexbox;
   display: flex;
   font-weight: 600;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media only screen and (max-width: 38.75em) {
@@ -413,8 +416,14 @@ code {
 }
 
 .main {
-  width: 100%;
-  padding: 0 4rem;
+  max-width: 69%;
+  padding: 0;
+}
+
+@media only screen and (max-width: 38.75em) {
+  .main {
+    max-width: 100%;
+  }
 }
 
 .main p {
@@ -441,6 +450,14 @@ code {
   list-style: none;
   text-align: center;
   width: 100%;
+}
+
+@media only screen and (max-width: 38.75em) {
+  .main .skills__list {
+    width: 80%;
+    min-width: 22rem;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 31em) {
@@ -484,7 +501,7 @@ code {
 .main .skills__type {
   -webkit-box-shadow: #aaaaaa 0px 0px 15px 5px;
           box-shadow: #aaaaaa 0px 0px 15px 5px;
-  min-height: 35vh;
+  min-height: 40rem;
   min-width: 33%;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -537,7 +554,23 @@ code {
           box-shadow: #aaaaaa 0px 0px 15px 5px;
 }
 
+@media only screen and (max-width: 53em) {
+  .main .projects__link {
+    -webkit-transform: scale(0.9) translateX(-10rem);
+        -ms-transform: scale(0.9) translateX(-10rem);
+            transform: scale(0.9) translateX(-10rem);
+  }
+}
+
 @media only screen and (max-width: 38.75em) {
+  .main .projects__link {
+    -webkit-transform: translateX(-10rem);
+        -ms-transform: translateX(-10rem);
+            transform: translateX(-10rem);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
   .main .projects__link {
     -webkit-transform: translateX(-10rem);
         -ms-transform: translateX(-10rem);
@@ -562,6 +595,14 @@ code {
   -webkit-transform: translateX(33rem);
       -ms-transform: translateX(33rem);
           transform: translateX(33rem);
+}
+
+@media only screen and (max-width: 53em) {
+  .main .projects__block:hover .projects__block-description {
+    -webkit-transform: scale(0.9) translateX(23rem);
+        -ms-transform: scale(0.9) translateX(23rem);
+            transform: scale(0.9) translateX(23rem);
+  }
 }
 
 @media (hover: none) and (pointer: coarse) {
@@ -616,6 +657,14 @@ code {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+}
+
+@media only screen and (max-width: 53em) {
+  .main .projects__block-description {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+  }
 }
 
 @media (hover: none) and (pointer: coarse) {
@@ -729,6 +778,12 @@ code {
   -webkit-transition: left 0.5s, background-color 0.7s, width 0.5s;
   -o-transition: left 0.5s, background-color 0.7s, width 0.5s;
   transition: left 0.5s, background-color 0.7s, width 0.5s;
+}
+
+@media only screen and (max-width: 53em) {
+  .nav {
+    width: 45rem;
+  }
 }
 
 @media only screen and (max-width: 38.75em) {
